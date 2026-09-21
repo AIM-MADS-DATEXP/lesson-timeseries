@@ -52,9 +52,9 @@
 - Demo 3: manual ARMA, does not work
     - The reason demo 3 does not work is because ARMA assumes the time series is *stationary*. "Stationary" means there is no *seasonality* (recurring patterns) in the data.
 
-- Demo 4: reducing seasonality using differencing
-  - Differencing does not completely undo the effects of seasonality, but it does reduce its effects.
-  - Differencing can also help remove underlying larger trends. In economics, for example, long term trends (continuous growth) are often less interesting than smaller trends.
+- Demo 4: removing trends using differencing
+  - Differencing can help remove underlying larger trends. In economics, for example, long term trends (continuous growth) are often less interesting than smaller trends.
+  - Differencing does not completely undo the effects of seasonality, but it can reduce its effects.
   - Better results can be had using a technique called Fourier analysis, but that is outside of the scope of this lecture.
 
 - It is possible to combine differencing and ARMA to make predictions: **ARIMA** : autoregressive integrated moving average. There is also ARIMA + seasonality: **SARIMA**. 
